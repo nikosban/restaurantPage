@@ -1,5 +1,7 @@
+import "./styles.css";
 import {loadHomePage} from "./home.js"
 import {loadContactPage} from "./contact.js"
+import { loadMenuPage } from "./menu.js";
 
 console.log("Hello World");
 
@@ -22,10 +24,15 @@ function clear () {
 homepage.addEventListener("click", () => {
     clear();
     loadHomePage();
+    homepage.classList.add("active");
 })
 contact.addEventListener("click", () => {
     clear();
     loadContactPage();
+})
+menu.addEventListener("click", () => {
+    clear();
+    loadMenuPage();
 })
 
 
