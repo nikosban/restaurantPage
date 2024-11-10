@@ -1,4 +1,4 @@
-import { makeElement } from "./functions";
+import { cardComponent, makeElement } from "./functions";
 
 function loadMenuPage() {
 
@@ -33,6 +33,17 @@ function loadMenuPage() {
     makeElement("h5", "", "Fisherman’s Seafood Pasta", menuCard4);
     makeElement("h5", "", "20€", menuCard4);
     makeElement("p", "", "A Milos specialty with mussels, calamari, shrimp, and clams tossed in a light garlic, white wine, and tomato sauce over handmade pasta.", menuCard4);
+
+
+    cardComponent(
+        "Patates",
+         "3$",
+          "This is a test card",
+           menuList)
+
+           
+    cardComponent("Ntomates", "8$", "This is a test card", menuList)
+    cardComponent("Elies", "4$", "This is a test card", menuList)
 };
 
 export {loadMenuPage};

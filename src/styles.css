@@ -75,3 +75,17 @@ h1 {
     flex-direction: column;
     border-bottom: 1px solid blue;
 }
+
+.titleWrap {
+
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
